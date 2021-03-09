@@ -1,0 +1,30 @@
+.btn
+    box-sizing: border-box
+    color: $color_white
+    background: $color_pink
+    border-radius: 68px
+    font-size: 16px
+    line-height: 18.75px
+    padding: 15.5px 80px
+    transition: all .2s
+    display: inline-block
+    border: 1px solid transparent
+
+    &--dark
+        background: transparent
+        border: 1px solid #2A407C
+    
+    &:hover
+        background: transparent
+        border: 1px solid #2A407C
+
+    &--small
+        @extend .btn--dark
+        color: $color_gray
+        padding: 10.5px 53px
+
+    &--small:hover, &--dark:hover
+        background: $color_pink
+        color: $color_white
+        border-color: transparent
+    

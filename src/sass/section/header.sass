@@ -1,0 +1,60 @@
+.main-header
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        z-index: 9999
+    
+    &__inner
+        flex-grow: 1
+        margin-left: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+
+.active-menu
+    .menu-button
+        background: $color_white
+
+        &::before, &::after, &__line
+            background: $color_dark
+            width: 90%
+
+    .main-header__inner
+        position: absolute
+        display: flex !important
+        flex-direction: column
+        top: 42px
+        background: #fff
+        width: 100%
+        padding: 10px 10px 15px 10px
+        box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.5)
+    
+    .menu__link
+        display: block
+        padding: 25px 0
+        margin: 5px auto
+        background: $color_dark
+        color: $color_white
+
+    .menu__item
+        text-align: center
+        margin-right: 0
+    
+    .menu__list
+        display: block
+    
+    .main-header__menu
+        width: 100%
+    
+    .sign-links
+        margin-top: 25px
+
+    .sign-link, .btn--small
+        color: $color_dark
+    
+    .btn--small:hover
+        color: white
+    

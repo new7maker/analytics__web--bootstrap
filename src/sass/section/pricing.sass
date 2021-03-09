@@ -1,0 +1,88 @@
+.pricing
+    background: -webkit-linear-gradient(97.5deg,#172755, #172755 81%, #ef2a82 81.1%, #ef2a82 82.1%, #F8F9FF 82.25%) no-repeat
+    padding-top: 275px
+    overflow: hidden
+    .btn:hover
+        background: $color_dark
+
+    &__slider
+        display: flex
+        padding-bottom: 100px
+        position: relative
+        z-index: 9999
+
+        &-heading
+            border-bottom: 1px solid rgba(42, 64, 124, 1);
+            padding-bottom: 37px
+            margin-bottom: 28px
+        
+        &-item
+            padding: 40px
+            &:last-child
+                .pricing__slider-content
+                    margin-right: 0
+
+        &-content
+            max-width: 340px
+            // margin: 0 40px
+            text-align: center
+            padding: 50px 60px 70px
+            background: rgba(#0F1F4B, 0.6)
+            border-radius: 30px
+            transition: box-shadow .45s
+
+            &--white
+                background: $color_white
+                box-shadow: 0px 18px 50px -15px #060F28
+
+                .pricing__title, .pricing__cost
+                    color: $color_dark
+                
+                .pricing__slider-heading
+                    border-color: #D3D9E9
+            
+            &:hover
+                box-shadow: 0px 18px 50px -15px #060F28
+
+
+    &__title
+        color: $color_white
+        font-weight: 700
+        font-size: 30px
+        line-height: 35.16px
+        display: block
+        margin-bottom: 10px
+    
+    &__cost
+        color: $color_white
+        font-size: 60px
+        line-height: 70.31px
+        display: block
+
+        &-currency
+            font-size: 30px
+
+    
+    &__sub-title
+        font-size: 18px
+        line-height: 27px
+        
+    &__sub-cost
+        display: inline-block
+        margin-bottom: 40px
+
+    &__container
+        position: relative
+        max-width: 1280px
+        &::before
+            content: ''
+            position: absolute
+            bottom: -1000px
+            right: -1260px
+            width: 2010px
+            height: 2010px
+            opacity: 0.7
+            background: url("../../img/offer-elem-3-bg.svg") no-repeat
+            z-index: 1
+    
+        

@@ -1,0 +1,81 @@
+body
+    font-family: $main_font
+    font-weight: 400
+    background: #F8F9FF
+    color: $color_gray
+
+html, body 
+    height: 100%
+    margin: 0
+
+ul, p, li, h1, h2, h3, h4, h5, h6
+    margin: 0
+
+ul
+    padding: 0
+    list-style: none
+
+a
+    text-decoration: none
+    color: $color_gray
+
+.text-big
+    font-size: 18px
+    line-height: 27px
+
+.text-small
+    font-size: 16px
+    line-height: 22.4px
+
+.main-title
+    font-size: 50px
+    line-height: 60px
+    font-weight: 700
+    color: $color_white
+
+.section-title
+    color: $color_dark
+    font-size: 40px
+    font-weight: 700
+    line-height: 46.88px
+    margin-bottom: 30px
+
+    &--white
+        color: $color_white
+    
+.sign-link
+    transition: color .12s
+    &:hover
+        color: $color_white
+
+.section__heading
+    margin-bottom: 80px
+    text-align: center
+    position: relative
+    z-index: 9999
+
+.social-link
+    font-size: 20px
+    margin-right: 40px
+    transition: color .15s 
+
+    &:last-child
+        margin-right: 0
+
+    &:hover
+        color: $color_white
+
+.slick-dots
+    bottom: 0
+    
+.slick-dots li button
+    background: $color_white
+    width: 15px
+    height: 15px
+    border-radius: 50%
+
+.slick-dots li.slick-active button
+    background: $color_pink
+
+.slick-dots li button:before
+    font-size: 0
